@@ -1,5 +1,6 @@
 = GG02 仕様書
 
 - https://docs.google.com/document/d/1WBmYvsMvK-l9Y2uDnzIsub0lZSQus4nC9vYew9JtJpY/edit#heading=h.gvkgo913mpz8[企画書]
+- link:UI.adoc[]
 - link:リアクター.adoc[]
 - link:宝石.adoc[]
