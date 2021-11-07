@@ -1,3 +1,7 @@
+# GG02 専用設定
+/UserSettings/
+/.docs/
+
 # This .gitignore file should be placed at the root of your Unity project directory
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
