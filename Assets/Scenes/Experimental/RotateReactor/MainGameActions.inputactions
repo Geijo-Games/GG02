@@ -1,0 +1,33 @@
+{
+    "name": "MainGameActions",
+    "maps": [
+        {
+            "name": "Playing",
+            "id": "170ff516-6329-4601-8702-80185cd64318",
+            "actions": [
+                {
+                    "name": "Rotate",
+                    "type": "Value",
+                    "id": "128213c9-2096-4cdf-8dca-b239d2d35f6d",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f1eb590e-62e7-4147-b230-6151b96af452",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
