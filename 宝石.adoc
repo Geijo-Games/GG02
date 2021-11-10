@@ -40,6 +40,8 @@ image:assets/img/宝石の色.png[]
 
 NOTE: 赤緑系色覚異常でも識別できる色にしている。
 
+WARNING: 絵を作るとき赤緑系色覚異常でどう見えるか確認してください。絵描きソフトで色覚異常シミュレーションはあるはず。また、Windows では link:https://www.microsoft.com/en-us/p/coloursimulations/9nblggh4385h[ColourSimulations] も使いやすい。
+
 == レア度
 
 宝石のレア度は 4 段階ある。
