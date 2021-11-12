@@ -23,7 +23,7 @@ public class FluidCreate : MonoBehaviour
     void Update()
     {
         // フレームカウントが10の倍数の時にオブジェクトを生成します。
-        if (Time.frameCount % 10 == 0)
+        if (Time.frameCount % 20 == 0)
         {
             CreateObject();
         }
