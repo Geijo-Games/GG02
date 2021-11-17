@@ -277,6 +277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44eb73b479c484c4d88d192ecc3eec78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LidNumber: 1
 --- !u!95 &98201892
 Animator:
   serializedVersion: 3
@@ -308,6 +309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44eb73b479c484c4d88d192ecc3eec78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LidNumber: 1
 --- !u!1 &305308974
 GameObject:
   m_ObjectHideFlags: 0
@@ -424,6 +426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2b38191585ce2241a3f033ccca47044, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lidOpenOperation: {fileID: 98201893}
 --- !u!1 &329636736
 GameObject:
   m_ObjectHideFlags: 0
