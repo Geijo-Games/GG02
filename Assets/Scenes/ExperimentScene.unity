@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 89349199}
   - component: {fileID: 89349200}
   - component: {fileID: 89349201}
+  - component: {fileID: 89349202}
   m_Layer: 0
   m_Name: reactor_bottom_light_red
   m_TagString: Untagged
@@ -225,6 +226,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &89349202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89349198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db7ac77f6e885ef42b9d0f2a9d091241, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bottomLidAnimation: {fileID: 0}
+  BottomLightOpenWarningEnd: 0
 --- !u!1 &98201889
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,6 +312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LidNumber: 1
   leftLidAnimation: {fileID: 305308978}
+  rightLidAnimation: {fileID: 1574926319}
 --- !u!1 &305308974
 GameObject:
   m_ObjectHideFlags: 0
@@ -607,6 +623,7 @@ GameObject:
   - component: {fileID: 873697548}
   - component: {fileID: 873697550}
   - component: {fileID: 873697549}
+  - component: {fileID: 873697551}
   m_Layer: 0
   m_Name: 'BottomLidJoint '
   m_TagString: Untagged
@@ -699,6 +716,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &873697551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873697547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ef0d0753d4ac594a9b8b81e6a795d0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lidOpenOperation: {fileID: 0}
+  bottomLightAnimation: {fileID: 0}
+  BottomEnd: 0
+  BottomWarning: 0
 --- !u!1 &975910366
 GameObject:
   m_ObjectHideFlags: 0
@@ -1337,6 +1370,7 @@ GameObject:
   - component: {fileID: 1574926316}
   - component: {fileID: 1574926318}
   - component: {fileID: 1574926317}
+  - component: {fileID: 1574926319}
   m_Layer: 0
   m_Name: 'RightLidJoint '
   m_TagString: Untagged
@@ -1429,6 +1463,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1574926319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574926315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 825c2f8fe21d21d45ab0e758ed606658, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RightEnd: 0
+  lidOpenOperation: {fileID: 98201893}
 --- !u!1 &1694631227
 GameObject:
   m_ObjectHideFlags: 0

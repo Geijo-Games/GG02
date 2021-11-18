@@ -5,13 +5,13 @@ using UnityEngine;
 public class RightLidAnimation : MonoBehaviour
 {
     Animator animator;
-
+    public bool RightEnd = false;
     public LidOpenOperation lidOpenOperation;
-    int LidNum;
+    
     // Start is called before the first frame update
     void Start()
     {
-        LidNum = lidOpenOperation.LidNumber;
+      
         animator = GetComponent<Animator>();
     }
 
@@ -23,29 +23,29 @@ public class RightLidAnimation : MonoBehaviour
 
     IEnumerator LidAnimation()
     {
-        if (LidNum == 2)
+        if (lidOpenOperation.LidNumber == 2)
         {
-            animator.SetInteger("LidNumber", 1);
+            animator.SetInteger("LidNumber", lidOpenOperation.LidNumber);
             Debug.Log("Yaik!");
             yield return new WaitForSeconds(3.0f);
             Debug.Log("Yaik!");
-            animator.SetBool("LeftLidOpenWarning", true);
+            animator.SetBool("RightLidOpenWarning", true);
             yield return new WaitForSeconds(3.0f);
-            animator.SetBool("LeftLidOpenWarning", false);
-            animator.SetBool("LeftLidOpening", true);
+            animator.SetBool("RightLidOpenWarning", false);
+            animator.SetBool("RightLidOpening", true);
             yield return new WaitForSeconds(5.0f);
-            animator.SetBool("LeftLidOpening", false);
-            animator.SetBool("LeftLidCloseWarning", true);
+            animator.SetBool("RightLidOpening", false);
+            animator.SetBool("RightLidCloseWarning", true);
             yield return new WaitForSeconds(3.0f);
-            animator.SetBool("LeftLidCloseWarning", false);
-            animator.SetBool("LeftLidClosing", true);
+            animator.SetBool("RightLidCloseWarning", false);
+            animator.SetBool("RightLidClosing", true);
         }
     }
-    public void LeftLidAnimationEnd()
+    public void RightLidAnimationEnd()
     {
-        LidNum = 3;
-        animator.SetInteger("LidNumber", 3);
-        animator.SetBool("LeftLidClosing", false);
+        RightEnd = true;
+        animator.SetInteger("LidNumber", lidOpenOperation.LidNumber);
+        animator.SetBool("RightLidClosing", false);
     }
 
 }

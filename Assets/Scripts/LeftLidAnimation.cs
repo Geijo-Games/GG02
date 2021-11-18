@@ -28,7 +28,7 @@ public class LeftLidAnimation : MonoBehaviour
     {
         if (lidOpenOperation.LidNumber == 1)
         {
-            animator.SetInteger("LidNumber", 1);
+            animator.SetInteger("LidNumber", lidOpenOperation.LidNumber);
             Debug.Log("Yaik!");
             yield return new WaitForSeconds(3.0f);
             Debug.Log("Yaik!");
