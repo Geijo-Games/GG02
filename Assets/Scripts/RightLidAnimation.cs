@@ -2,19 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LeftLidAnimation : MonoBehaviour
+public class RightLidAnimation : MonoBehaviour
 {
     Animator animator;
-   
+
     public LidOpenOperation lidOpenOperation;
-  
-    public bool LeftEnd = false;
+    int LidNum;
     // Start is called before the first frame update
     void Start()
     {
-
-
-        
+        LidNum = lidOpenOperation.LidNumber;
         animator = GetComponent<Animator>();
     }
 
@@ -26,7 +23,7 @@ public class LeftLidAnimation : MonoBehaviour
 
     IEnumerator LidAnimation()
     {
-        if (lidOpenOperation.LidNumber == 1)
+        if (LidNum == 2)
         {
             animator.SetInteger("LidNumber", 1);
             Debug.Log("Yaik!");
@@ -46,10 +43,9 @@ public class LeftLidAnimation : MonoBehaviour
     }
     public void LeftLidAnimationEnd()
     {
-        LeftEnd = true;
-        animator.SetInteger("LidNumber", lidOpenOperation.LidNumber);
+        LidNum = 3;
+        animator.SetInteger("LidNumber", 3);
         animator.SetBool("LeftLidClosing", false);
     }
+
 }
-
-

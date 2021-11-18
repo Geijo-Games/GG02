@@ -236,7 +236,6 @@ GameObject:
   - component: {fileID: 98201890}
   - component: {fileID: 98201893}
   - component: {fileID: 98201892}
-  - component: {fileID: 98201891}
   m_Layer: 0
   m_Name: reactor
   m_TagString: Untagged
@@ -265,19 +264,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &98201891
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 98201889}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44eb73b479c484c4d88d192ecc3eec78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LidNumber: 1
 --- !u!95 &98201892
 Animator:
   serializedVersion: 3
@@ -310,6 +296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LidNumber: 1
+  leftLidAnimation: {fileID: 305308978}
 --- !u!1 &305308974
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,6 +414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lidOpenOperation: {fileID: 98201893}
+  LeftEnd: 0
 --- !u!1 &329636736
 GameObject:
   m_ObjectHideFlags: 0
@@ -965,7 +953,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1101455953}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b0cc4002a69fbd4d888f47881f5ac73, type: 3}
   m_Name: 
