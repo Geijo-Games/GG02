@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class BottomLightAnimation : MonoBehaviour
 {
     Animator animator;
     public BottomLidAnimation bottomLidAnimation;
-    public bool BottomLightOpenWarningEnd = false;
+    public bool BottomLightWarningEnd = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,17 +22,15 @@ public class BottomLightAnimation : MonoBehaviour
 
     IEnumerator LidAnimation()
     {
-
+        if (bottomLidAnimation.BottomWarning == true )
+        {
             animator.SetBool("BottomLidWarning", true);
             yield return new WaitForSeconds(3.0f);
             animator.SetBool("BottomLidWarning", false);
+            
+        }
+
 
     }
-    public void BottomLightAnimationEnd()
-    {
-        if(bottomLidAnimation.BottomWarning == true) {
-            BottomLightOpenWarningEnd = true;
-        }
-       
-    }
+
 }

@@ -23,12 +23,14 @@ public class LidOpenOperation : MonoBehaviour
         {
             LidNumber = 3;
             Debug.Log("OK!,3");
+            rightLidAnimation.RightEnd = false;
         }
 
         if (leftLidAnimation.LeftEnd == true)
         {
             LidNumber = 2;
             Debug.Log("OK!,2");
+            leftLidAnimation.LeftEnd = false;
         }
     }
 }

@@ -9,6 +9,7 @@ public class BottomLidAnimation : MonoBehaviour
     public BottomLightAnimation bottomLightAnimation;
     public bool BottomEnd = false;
     public bool BottomWarning = false;
+   
     // Start is called before the first frame update
     // Start is called before the first frame update
     void Start()
@@ -28,21 +29,21 @@ public class BottomLidAnimation : MonoBehaviour
         {
             animator.SetInteger("LidNumber", lidOpenOperation.LidNumber);
             Debug.Log("Yaik!");
+            BottomWarning = true;
             yield return new WaitForSeconds(3.0f);
             Debug.Log("Yaik!");
-            BottomWarning = true;
-            if (bottomLightAnimation.BottomLightOpenWarningEnd==true) {
-                BottomWarning = false; 
-                animator.SetBool("BottomLidOpening", true);
-                yield return new WaitForSeconds(5.0f);
-                animator.SetBool("BottomLidOpening", false);
-                BottomWarning = true;
-            }
-
-            animator.SetBool("BottomLidCloseWarning", true);
+            BottomWarning = false;
             yield return new WaitForSeconds(3.0f);
-            animator.SetBool("BottomLidCloseWarning", false);
+            animator.SetBool("BottomLidOpening", true);
+            yield return new WaitForSeconds(5.0f);
+            animator.SetBool("BottomLidOpening", false);
+            BottomWarning = true;
+            yield return new WaitForSeconds(3.0f);
+            BottomWarning = false;
             animator.SetBool("BottomLidClosing", true);
+            bottomLightAnimation.BottomLightWarningEnd = false;
+         
+
         }
     }
     public void LeftLidAnimationEnd()
@@ -50,6 +51,8 @@ public class BottomLidAnimation : MonoBehaviour
         BottomEnd = true;
         animator.SetInteger("LidNumber", lidOpenOperation.LidNumber);
         animator.SetBool("BottomLidClosing", false);
+       
+
     }
 
 }

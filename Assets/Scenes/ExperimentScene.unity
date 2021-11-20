@@ -238,8 +238,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db7ac77f6e885ef42b9d0f2a9d091241, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bottomLidAnimation: {fileID: 0}
-  BottomLightOpenWarningEnd: 0
+  bottomLidAnimation: {fileID: 873697551}
+  BottomLightWarningEnd: 0
 --- !u!1 &98201889
 GameObject:
   m_ObjectHideFlags: 0
@@ -728,8 +728,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ef0d0753d4ac594a9b8b81e6a795d0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lidOpenOperation: {fileID: 0}
-  bottomLightAnimation: {fileID: 0}
+  lidOpenOperation: {fileID: 98201893}
+  bottomLightAnimation: {fileID: 89349202}
   BottomEnd: 0
   BottomWarning: 0
 --- !u!1 &975910366
