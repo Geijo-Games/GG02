@@ -8,7 +8,9 @@ public class LidOpenOperation : MonoBehaviour
     public int LidNumber = 1;
     public LeftLidAnimation leftLidAnimation;
     public RightLidAnimation rightLidAnimation;
-    
+    public BottomLidAnimation bottomLidAnimation;
+    public TopLidAnimation topLidAnimation;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +21,18 @@ public class LidOpenOperation : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        if (topLidAnimation.TopEnd == true)
+        {
+            LidNumber = 1;
+            Debug.Log("OK!,return");
+            topLidAnimation.TopEnd = false;
+        }
+        if (bottomLidAnimation.BottomEnd == true)
+        {
+            LidNumber = 4;
+            Debug.Log("OK!,4");
+            bottomLidAnimation.BottomEnd = false;
+        }
         if (rightLidAnimation.RightEnd == true)
         {
             LidNumber = 3;
