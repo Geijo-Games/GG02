@@ -233,7 +233,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 89349198}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db7ac77f6e885ef42b9d0f2a9d091241, type: 3}
   m_Name: 
@@ -732,6 +732,7 @@ MonoBehaviour:
   bottomLightAnimation: {fileID: 89349202}
   BottomEnd: 0
   BottomWarning: 0
+  reactor_bottom_light_red: {fileID: 89349201}
 --- !u!1 &975910366
 GameObject:
   m_ObjectHideFlags: 0

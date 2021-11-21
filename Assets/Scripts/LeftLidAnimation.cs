@@ -29,9 +29,7 @@ public class LeftLidAnimation : MonoBehaviour
         if (lidOpenOperation.LidNumber == 1)
         {
             animator.SetInteger("LidNumber", lidOpenOperation.LidNumber);
-            Debug.Log("Yaik!");
             yield return new WaitForSeconds(3.0f);
-            Debug.Log("Yaik!");
             animator.SetBool("LeftLidOpenWarning", true);
             yield return new WaitForSeconds(3.0f);
             animator.SetBool("LeftLidOpenWarning", false);
