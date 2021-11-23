@@ -28,8 +28,8 @@ public class GemCounter : MonoBehaviour
             if (countTime <= 2)
             {
                 countTime += Time.deltaTime;
-                Debug.Log("collision");
-                Debug.Log("scaling");
+                //Debug.Log("collision");
+                //Debug.Log("scaling");
                 gemscale = gameObject.transform.localScale; //ŸŒ»Ý‚Ì‘å‚«‚³‚ð‘ã“ü
                 gemscale.x = gemscale.x + countTime / 1000;
                 gemscale.y = gemscale.y + countTime / 1000;

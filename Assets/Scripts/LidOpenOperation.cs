@@ -30,30 +30,6 @@ public class LidOpenOperation : MonoBehaviour
 
 
 
-        //if (topLidAnimation.TopEnd == true)
-        //{
-        //    LidNumber = 1;
-        //    Debug.Log("OK!,return");
-        //    topLidAnimation.TopEnd = false;
-        //}
-        //if (bottomLidAnimation.BottomEnd == true)
-        //{
-        //    LidNumber = 4;
-        //    Debug.Log("OK!,4");
-        //    bottomLidAnimation.BottomEnd = false;
-        //}
-        //if (rightLidAnimation.RightEnd == true)
-        //{
-        //    LidNumber = 3;
-        //    Debug.Log("OK!,3");
-        //    rightLidAnimation.RightEnd = false;
-        //}
 
-        //if (leftLidAnimation.LeftEnd == true)
-        //{
-        //    LidNumber = 2;
-        //    Debug.Log("OK!,2");
-        //    leftLidAnimation.LeftEnd = false;
-        //}
     }
 }
