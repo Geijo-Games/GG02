@@ -51,7 +51,7 @@ public class BottomLidAnimation : MonoBehaviour
         BottomEnd = true;
         animator.SetInteger("LidNumber", lidOpenOperation.LidNumber);
         animator.SetBool("BottomLidClosing", false);
-       
+        lidOpenOperation.Endsignal = true;
 
     }
 

@@ -26,9 +26,12 @@ public class LeftLidAnimation : MonoBehaviour
 
     IEnumerator LidAnimation()
     {
-        if (lidOpenOperation.LidNumber == 1)
+        do
         {
-            animator.SetInteger("LidNumber", lidOpenOperation.LidNumber);
+            if (lidOpenOperation.LidNumber == 1)
+        {
+ 
+                animator.SetInteger("LidNumber", lidOpenOperation.LidNumber);
             yield return new WaitForSeconds(3.0f);
             animator.SetBool("LeftLidOpenWarning", true);
             yield return new WaitForSeconds(3.0f);
@@ -40,13 +43,22 @@ public class LeftLidAnimation : MonoBehaviour
             yield return new WaitForSeconds(3.0f);
             animator.SetBool("LeftLidCloseWarning", false);
             animator.SetBool("LeftLidClosing", true);
+
+
+
         }
+            continue;
+
+
+        } while (false);
+
     }
     public void LeftLidAnimationEnd()
     {
         LeftEnd = true;
         animator.SetInteger("LidNumber", lidOpenOperation.LidNumber);
         animator.SetBool("LeftLidClosing", false);
+        lidOpenOperation.Endsignal = true;
     }
 }
 

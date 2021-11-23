@@ -46,6 +46,7 @@ public class RightLidAnimation : MonoBehaviour
         RightEnd = true;
         animator.SetInteger("LidNumber", lidOpenOperation.LidNumber);
         animator.SetBool("RightLidClosing", false);
+        lidOpenOperation.Endsignal = true;
     }
 
 }

@@ -49,7 +49,7 @@ public class TopLidAnimation : MonoBehaviour
        TopEnd = true;
         animator.SetInteger("LidNumber", lidOpenOperation.LidNumber);
         animator.SetBool("TopLidClosing", false);
-
+        lidOpenOperation.Endsignal = true;
 
     }
 

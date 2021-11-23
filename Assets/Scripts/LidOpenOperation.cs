@@ -10,41 +10,50 @@ public class LidOpenOperation : MonoBehaviour
     public RightLidAnimation rightLidAnimation;
     public BottomLidAnimation bottomLidAnimation;
     public TopLidAnimation topLidAnimation;
+    public bool Endsignal=false;
 
     // Start is called before the first frame update
     void Start()
     {
-        //animator = GetComponent<Animator>();
-       // isLeftEnd = leftLidAnimation.LeftEnd;
+
     }
 
     // Update is called once per frame
     private void Update()
     {
-        if (topLidAnimation.TopEnd == true)
+        if(Endsignal == true)
         {
-            LidNumber = 1;
-            Debug.Log("OK!,return");
-            topLidAnimation.TopEnd = false;
-        }
-        if (bottomLidAnimation.BottomEnd == true)
-        {
-            LidNumber = 4;
-            Debug.Log("OK!,4");
-            bottomLidAnimation.BottomEnd = false;
-        }
-        if (rightLidAnimation.RightEnd == true)
-        {
-            LidNumber = 3;
-            Debug.Log("OK!,3");
-            rightLidAnimation.RightEnd = false;
+            LidNumber = 0;
+            Endsignal = false;
+            LidNumber = Random.Range(1, 5);
         }
 
-        if (leftLidAnimation.LeftEnd == true)
-        {
-            LidNumber = 2;
-            Debug.Log("OK!,2");
-            leftLidAnimation.LeftEnd = false;
-        }
+
+
+        //if (topLidAnimation.TopEnd == true)
+        //{
+        //    LidNumber = 1;
+        //    Debug.Log("OK!,return");
+        //    topLidAnimation.TopEnd = false;
+        //}
+        //if (bottomLidAnimation.BottomEnd == true)
+        //{
+        //    LidNumber = 4;
+        //    Debug.Log("OK!,4");
+        //    bottomLidAnimation.BottomEnd = false;
+        //}
+        //if (rightLidAnimation.RightEnd == true)
+        //{
+        //    LidNumber = 3;
+        //    Debug.Log("OK!,3");
+        //    rightLidAnimation.RightEnd = false;
+        //}
+
+        //if (leftLidAnimation.LeftEnd == true)
+        //{
+        //    LidNumber = 2;
+        //    Debug.Log("OK!,2");
+        //    leftLidAnimation.LeftEnd = false;
+        //}
     }
 }
