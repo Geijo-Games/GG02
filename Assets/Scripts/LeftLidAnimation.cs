@@ -5,7 +5,7 @@ using UnityEngine;
 public class LeftLidAnimation : MonoBehaviour
 {
     Animator animator;
-   
+    IEnumerator coroutine;
     public LidOpenOperation lidOpenOperation;
   
     public bool LeftEnd = false;
@@ -15,19 +15,26 @@ public class LeftLidAnimation : MonoBehaviour
 
 
         
-        animator = GetComponent<Animator>();
+         animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        StartCoroutine("LidAnimation");
+        IEnumerator coroutine = LidAnimation();
+        StartCoroutine(coroutine);
+        if(lidOpenOperation.Endsignal == true)
+        {
+            StopCoroutine(coroutine);
+            coroutine = LidAnimation();
+            Debug.Log("wwww");
+            StartCoroutine(coroutine);
+        }
     }
 
     IEnumerator LidAnimation()
     {
-        do
-        {
+   
             if (lidOpenOperation.LidNumber == 1)
         {
  
@@ -47,10 +54,7 @@ public class LeftLidAnimation : MonoBehaviour
 
 
         }
-            continue;
 
-
-        } while (false);
 
     }
     public void LeftLidAnimationEnd()
