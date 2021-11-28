@@ -37,6 +37,7 @@ public class LidController : MonoBehaviour
 
         if (CurrentActiveLid.ShouldChangeState(Timer))
         {
+            /// Return true when current lid goes to end, otherwise return false.
             if (CurrentActiveLid.ChangeState())
             {
                 SwitchLid();

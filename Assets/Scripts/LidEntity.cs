@@ -35,24 +35,27 @@ public class LidEntity : MonoBehaviour
 
     public bool ChangeState()
     {
+        /// The middle state
         if(CurState > 0 && CurState < AnimList.Length - 1)
         {
             AnimList[CurState - 1].animator.SetBool(AnimList[CurState - 1].CallName, false);
             AnimList[CurState].animator.SetBool(AnimList[CurState].CallName, true);
-            ///Debug.Log("Cap " + lidId + " : " + AnimList[CurState].CallName);
+            //Debug.Log("Cap " + lidId + " : " + AnimList[CurState].CallName);
             CurState++;
         }
+        /// The end state
         else if(CurState == AnimList.Length - 1)
         {
             AnimList[CurState - 1].animator.SetBool(AnimList[CurState - 1].CallName, false);
-            ///Debug.Log("Cap " + lidId + " : Reset");
+            //Debug.Log("Cap " + lidId + " : Reset");
             CurState = 0;
             return true;
         }
+        /// The first state
         else
         {
             AnimList[CurState].animator.SetBool(AnimList[CurState].CallName, true);
-            ///Debug.Log("Cap " + lidId + " : " + AnimList[CurState].CallName);
+            //Debug.Log("Cap " + lidId + " : " + AnimList[CurState].CallName);
             CurState++;
         }
         return false;
