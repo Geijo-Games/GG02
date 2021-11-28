@@ -53,7 +53,7 @@ public class LidController : MonoBehaviour
         CurrentActiveLid = LidList[capId];
     }
 
-    // Get random lid (not same as the prev one).
+    /// Get random lid (not same as the prev one).
     int SelectLid()
     {
         int lidId;

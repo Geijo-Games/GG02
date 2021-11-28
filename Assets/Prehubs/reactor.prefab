@@ -401,23 +401,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsEnabled: 1
   lidId: 0
-  animator: {fileID: 0}
   AnimList:
   - State: 0
     CallName: RightLidOpenWarning
     CallTime: 0
+    animator: {fileID: 5246706983926143419}
   - State: 1
     CallName: RightLidOpening
     CallTime: 2
+    animator: {fileID: 5246706983926143419}
   - State: 2
     CallName: RightLidCloseWarning
     CallTime: 6
+    animator: {fileID: 5246706983926143419}
   - State: 3
     CallName: RightLidClosing
     CallTime: 8
+    animator: {fileID: 5246706983926143419}
   - State: 4
     CallName: 
     CallTime: 10
+    animator: {fileID: 5246706983926143419}
 --- !u!1 &5246706984049767355
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,7 +439,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5246706984049767352
 Transform:
   m_ObjectHideFlags: 0
@@ -586,23 +590,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsEnabled: 1
   lidId: 0
-  animator: {fileID: 0}
   AnimList:
   - State: 0
     CallName: TopLidOpenWarning
     CallTime: 0
+    animator: {fileID: 5246706984049767334}
   - State: 1
     CallName: TopLidOpening
     CallTime: 2
+    animator: {fileID: 5246706984053592789}
   - State: 2
     CallName: TopLidCloseWarning
     CallTime: 6
+    animator: {fileID: 5246706984049767334}
   - State: 3
     CallName: TopLidClosing
     CallTime: 8
+    animator: {fileID: 5246706984053592789}
   - State: 4
     CallName: 
     CallTime: 10
+    animator: {fileID: 5246706984053592789}
 --- !u!1 &5246706984073505066
 GameObject:
   m_ObjectHideFlags: 0
@@ -1137,23 +1145,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsEnabled: 1
   lidId: 0
-  animator: {fileID: 0}
   AnimList:
   - State: 0
     CallName: BottomLidOpenWarning
     CallTime: 0
+    animator: {fileID: 5246706985410671111}
   - State: 1
     CallName: BottomLidOpening
     CallTime: 2
+    animator: {fileID: 5246706984584380251}
   - State: 2
     CallName: BottomLidCloseWarning
     CallTime: 6
+    animator: {fileID: 5246706985410671111}
   - State: 3
     CallName: BottomLidClosing
     CallTime: 8
+    animator: {fileID: 5246706984584380251}
   - State: 4
     CallName: 
     CallTime: 10
+    animator: {fileID: 5246706984584380251}
 --- !u!1 &5246706985219869560
 GameObject:
   m_ObjectHideFlags: 0
@@ -1272,23 +1284,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsEnabled: 1
   lidId: 0
-  animator: {fileID: 0}
   AnimList:
   - State: 0
     CallName: LeftLidOpenWarning
     CallTime: 0
+    animator: {fileID: 5246706985219869542}
   - State: 1
     CallName: LeftLidOpening
     CallTime: 2
+    animator: {fileID: 5246706985219869542}
   - State: 2
     CallName: LeftLidCloseWarning
     CallTime: 6
+    animator: {fileID: 5246706985219869542}
   - State: 3
     CallName: LeftLidClosing
     CallTime: 8
+    animator: {fileID: 5246706985219869542}
   - State: 4
     CallName: 
     CallTime: 10
+    animator: {fileID: 5246706985219869542}
 --- !u!1 &5246706985310529407
 GameObject:
   m_ObjectHideFlags: 0
@@ -1498,7 +1514,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5246706985410671129
 Transform:
   m_ObjectHideFlags: 0

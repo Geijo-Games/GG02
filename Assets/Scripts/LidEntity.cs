@@ -9,6 +9,7 @@ public struct LidAnimData
     public int State;
     public string CallName;
     public float CallTime;
+    public Animator animator;
 }
 
 public class LidEntity : MonoBehaviour
@@ -16,7 +17,6 @@ public class LidEntity : MonoBehaviour
     [Header("General Settings")]
     public bool IsEnabled = true;
     public int lidId;
-    public Animator animator;
 
     [SerializeField]
     private LidAnimData[] AnimList = new LidAnimData[5];
@@ -25,7 +25,7 @@ public class LidEntity : MonoBehaviour
 
     void Start()
     {
-        animator = GetComponent<Animator>();
+
     }
 
     public bool ShouldChangeState(float curTime)
@@ -37,24 +37,25 @@ public class LidEntity : MonoBehaviour
     {
         if(CurState > 0 && CurState < AnimList.Length - 1)
         {
-            animator.SetBool(AnimList[CurState - 1].CallName, false);
-            animator.SetBool(AnimList[CurState].CallName, true);
-            //Debug.Log("Cap " + lidId + " : " + AnimList[CurState].CallName);
+            AnimList[CurState - 1].animator.SetBool(AnimList[CurState - 1].CallName, false);
+            AnimList[CurState].animator.SetBool(AnimList[CurState].CallName, true);
+            ///Debug.Log("Cap " + lidId + " : " + AnimList[CurState].CallName);
             CurState++;
         }
         else if(CurState == AnimList.Length - 1)
         {
-            animator.SetBool(AnimList[CurState - 1].CallName, false);
-            //Debug.Log("Cap " + lidId + " : Reset");
+            AnimList[CurState - 1].animator.SetBool(AnimList[CurState - 1].CallName, false);
+            ///Debug.Log("Cap " + lidId + " : Reset");
             CurState = 0;
             return true;
         }
         else
         {
-            animator.SetBool(AnimList[CurState].CallName, true);
-            //Debug.Log("Cap " + lidId + " : " + AnimList[CurState].CallName);
+            AnimList[CurState].animator.SetBool(AnimList[CurState].CallName, true);
+            ///Debug.Log("Cap " + lidId + " : " + AnimList[CurState].CallName);
             CurState++;
         }
         return false;
     }
+
 }
