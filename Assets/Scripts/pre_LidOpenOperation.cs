@@ -66,16 +66,6 @@ public class pre_LidOpenOperation : MonoBehaviour
             reactor_top_light_red.SetBool("TopLidOpenWarning", true);
             Invoke("TopLidOpen", 3);
             Invoke("TopCloseWarningStart", 10);
-
-
-
-            reactor_top_light_red.SetBool("TopLidCloseWarning", true);
-            
-            reactor_top_light_red.SetBool("TopLidCloseWarning", false);
-            TopLidJoint.SetBool("TopLidClosing", true);
-            
-
-
         }
 
     }
