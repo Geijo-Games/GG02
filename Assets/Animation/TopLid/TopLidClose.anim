@@ -196,6 +196,7 @@ AnimationClip:
     script: {fileID: 0}
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
+<<<<<<< HEAD
   m_Events:
   - time: 1
     functionName: TopLidAnimationEnd
@@ -204,3 +205,6 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+=======
+  m_Events: []
+>>>>>>> 18c637b5766dec692d5e0026abf2ac5de8afed41

@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &3180236 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1283446843979351867, guid: d6a321f93e95d4a4ebd67ba1d7ccfbfa, type: 3}
+  m_PrefabInstance: {fileID: 2432373323143476989}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1d701c00273364b9af3112fa61ba83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &89349198
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,6 +263,7 @@ GameObject:
   - component: {fileID: 98201893}
   - component: {fileID: 98201892}
   - component: {fileID: 98201891}
+  - component: {fileID: 98201894}
   m_Layer: 0
   m_Name: reactor
   m_TagString: Untagged
@@ -338,6 +350,21 @@ MonoBehaviour:
   bottomLidAnimation: {fileID: 873697551}
   topLidAnimation: {fileID: 1438039172}
   Endsignal: 0
+--- !u!114 &98201894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98201889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26e3a556bb3a5ef4f983e75e1b207fe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gemCollider: {fileID: 3180236}
+  GemCounter: 0
+  obj: {fileID: 2315294852737560503, guid: b08e28265f262044aadfd20232bc1aff, type: 3}
 --- !u!1 &257640745
 GameObject:
   m_ObjectHideFlags: 0
@@ -1347,14 +1374,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1438039169}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -0.26, y: 0.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 257640746}
   m_Father: {fileID: 98201890}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!95 &1438039171
 Animator:
   serializedVersion: 3
@@ -2025,6 +2052,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1283446843979351867, guid: d6a321f93e95d4a4ebd67ba1d7ccfbfa, type: 3}
+      propertyPath: gemOperator
+      value: 
+      objectReference: {fileID: 98201894}
     - target: {fileID: 2432373322849550373, guid: d6a321f93e95d4a4ebd67ba1d7ccfbfa, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2077,5 +2108,6 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7233369726814442726, guid: d6a321f93e95d4a4ebd67ba1d7ccfbfa, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d6a321f93e95d4a4ebd67ba1d7ccfbfa, type: 3}
