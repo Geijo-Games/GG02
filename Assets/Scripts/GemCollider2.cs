@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GemCollider : MonoBehaviour
+public class GemCollider2 : MonoBehaviour
 {
     public Vector3 GemPosition;
-    public GemOperator gemOperator;
    
+    bool GemDestroyFlag;
+    public GameObject obj;
     void Start()
     {
 
@@ -22,20 +23,21 @@ public class GemCollider : MonoBehaviour
         if (collision.gameObject.tag == "gem")
         {
             GemPosition = this.gameObject.transform.position;
-            gemOperator.GemDestroyFlag = true;
+            GemDestroyFlag = true;
             Debug.Log(GemPosition);
-            gemOperator.GemCounter += 1;
-
+            Instantiate(obj, GemPosition, Quaternion.identity);
+            Destroy(this.gameObject);
+            GemDestroyFlag = true;
         }
 
     }
 
     void GemDestroy()
     {
-        if(gemOperator.GemDestroyFlag == true)
+        if(GemDestroyFlag == true)
         {
-            Destroy(this.gameObject);
-            gemOperator.GemCounter = 0;
+           
+
         }
 
         

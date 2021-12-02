@@ -6,6 +6,7 @@ public class GemOperator : MonoBehaviour
 {
     public GemCollider gemCollider;
     public int GemCounter;
+    public bool GemDestroyFlag;
     public GameObject obj;
     // Start is called before the first frame update
     void Start()
@@ -16,9 +17,14 @@ public class GemOperator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GemCounter== 2)
+
+    }
+    void DoubledGemSpown()
+    {
+        if (GemCounter == 2)
         {
-            Instantiate(obj,gemCollider.GemPosition, Quaternion.identity);
+            Instantiate(obj, gemCollider.GemPosition, Quaternion.identity);
+            GemDestroyFlag = true;
         }
     }
 }
