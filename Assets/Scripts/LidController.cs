@@ -37,7 +37,7 @@ public class LidController : MonoBehaviour
 
         if (CurrentActiveLid.ShouldChangeState(Timer))
         {
-            /// Return true when current lid goes to end, otherwise return false.
+            // Return true when current lid goes to end, otherwise return false.
             if (CurrentActiveLid.ChangeState())
             {
                 SwitchLid();
@@ -54,7 +54,7 @@ public class LidController : MonoBehaviour
         CurrentActiveLid = LidList[capId];
     }
 
-    /// Get random lid (not same as the prev one).
+    // Get random lid (not same as the prev one).
     int SelectLid()
     {
         int lidId;

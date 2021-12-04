@@ -73,36 +73,24 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-<<<<<<< HEAD
-  - m_Name: BottomLidWarning
-=======
   - m_Name: BottomLidClosing
->>>>>>> 18c637b5766dec692d5e0026abf2ac5de8afed41
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-<<<<<<< HEAD
-  - m_Name: BottomLidClosing
-    m_Type: 9
-=======
   - m_Name: BottomLidOpenWarning
     m_Type: 4
->>>>>>> 18c637b5766dec692d5e0026abf2ac5de8afed41
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-<<<<<<< HEAD
-=======
   - m_Name: BottomLidCloseWarning
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
->>>>>>> 18c637b5766dec692d5e0026abf2ac5de8afed41
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
