@@ -24,7 +24,7 @@ public class GemCollider2 : MonoBehaviour
         {
             GemPosition = this.gameObject.transform.position;
             GemDestroyFlag = true;
-            Debug.Log(GemPosition);
+           // Debug.Log(GemPosition);
             Instantiate(obj, GemPosition, Quaternion.identity);
             Destroy(this.gameObject);
             GemDestroyFlag = true;
