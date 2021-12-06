@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3495675956162586718}
   - component: {fileID: 3495675956162586705}
   - component: {fileID: 39719301256064833}
-  - component: {fileID: 3576807537078201351}
+  - component: {fileID: -7016206737040933020}
   m_Layer: 7
   m_Name: Gem
   m_TagString: gem
@@ -155,7 +155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GemPosition: {x: 0, y: 0, z: 0}
   gemOperator: {fileID: 0}
---- !u!114 &3576807537078201351
+--- !u!114 &-7016206737040933020
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -168,3 +168,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  rb: {fileID: 0}
+  thrust: 3
