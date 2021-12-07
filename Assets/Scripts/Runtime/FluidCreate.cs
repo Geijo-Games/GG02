@@ -9,7 +9,7 @@ public class FluidCreate : MonoBehaviour
 {
     // オブジェクトを生成する元となるPrefabへの参照を保持します。
     public GameObject prefabObj;
-
+    Vector2 pos;
 
 
     // Prefabを生成する高さを定義します。
@@ -17,16 +17,13 @@ public class FluidCreate : MonoBehaviour
 
     void Start()
     {
-
+        InvokeRepeating("CreateObject", 1, 0.01f);
+        pos = this.gameObject.transform.position;
     }
 
     void Update()
     {
-        // フレームカウントが10の倍数の時にオブジェクトを生成します。
-        if (Time.frameCount % 20 == 0)
-        {
-            CreateObject();
-        }
+        
     }
 
     /// <Summary>
@@ -40,7 +37,7 @@ public class FluidCreate : MonoBehaviour
 
 
         // ゲームオブジェクトの位置を設定します。
-        obj.transform.localPosition = new Vector3(0f, 1.0f, 0f);
+        obj.transform.localPosition = pos;
 
 
     }
