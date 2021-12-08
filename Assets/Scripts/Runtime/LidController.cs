@@ -8,6 +8,8 @@ public class LidController : MonoBehaviour
     public bool IsEnabled = true;
     public LidEntity[] LidList = new LidEntity[4];
     public int LidSize;
+    public float LidSwitchInterval;
+    public bool IsLidSwitched;
 
     private LidEntity CurrentActiveLid;
     private int CurrentLidSize;
@@ -27,31 +29,34 @@ public class LidController : MonoBehaviour
         {
             LidList[i].lidId = i;
         }
-        SwitchLid();
+        ControlLid();
     }
 
     void Update()
     {
-        if (!IsEnabled || !CurrentActiveLid)
+        if (!IsEnabled || !CurrentActiveLid || LidSwitchInterval <= 0)
             return;
 
-        if (CurrentActiveLid.ShouldChangeState(Timer))
+        if (Timer > LidSwitchInterval)
         {
-            // Return true when current lid goes to end, otherwise return false.
-            if (CurrentActiveLid.ChangeState())
-            {
-                SwitchLid();
-                Timer = 0;
-            }
+            ControlLid();
+            Timer = 0;
         }
-
         Timer += Time.deltaTime;
     }
 
-    void SwitchLid()
+    void ControlLid()
+    {
+        LidEntity CurLid = GetSwitchedLid();
+        CurLid.LidControl();
+        Debug.Log("start lid: " + CurLid.lidId);
+    }
+
+    LidEntity GetSwitchedLid()
     {
         int capId = SelectLid();
         CurrentActiveLid = LidList[capId];
+        return CurrentActiveLid;
     }
 
     // Get random lid (not same as the prev one).
