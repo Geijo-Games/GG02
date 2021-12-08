@@ -260,6 +260,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 33
@@ -388,6 +392,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -516,6 +524,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -621,6 +633,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -726,6 +742,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -859,6 +879,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &410357735 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5246706984548227976, guid: e10b6a0f347ab6548bb3d1cddea29182, type: 3}
+  m_PrefabInstance: {fileID: 1630125090}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &410357739
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410357735}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!255 &410357740
+FixedJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410357735}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 1963310413}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 1
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0.000000014901161, y: 0}
+  m_DampingRatio: 0
+  m_Frequency: 0
 --- !u!1 &428819119 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
@@ -905,6 +969,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 29
@@ -1110,6 +1178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -1238,6 +1310,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1343,6 +1419,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -1448,6 +1528,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+--- !u!1 &723010139 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5246706983794895725, guid: e10b6a0f347ab6548bb3d1cddea29182, type: 3}
+  m_PrefabInstance: {fileID: 1630125090}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &723010143
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723010139}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!255 &723010144
+FixedJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723010139}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 1963310413}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 1
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_DampingRatio: 0
+  m_Frequency: 0
 --- !u!1001 &761367182
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1471,6 +1595,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -1576,6 +1704,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -1658,6 +1790,62 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+--- !u!1 &854369056 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5246706984073505066, guid: e10b6a0f347ab6548bb3d1cddea29182, type: 3}
+  m_PrefabInstance: {fileID: 1630125090}
+  m_PrefabAsset: {fileID: 0}
+--- !u!255 &854369057
+FixedJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854369056}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 1963310413}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 1
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_DampingRatio: 0
+  m_Frequency: 0
+--- !u!50 &854369060
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854369056}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &854369061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854369056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05600fc2455bebc489a3132274720bc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &871751549
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1681,6 +1869,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -1786,6 +1978,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 34
@@ -1868,6 +2064,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -1973,6 +2173,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2101,6 +2305,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -2183,6 +2391,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 26
@@ -2265,6 +2477,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -2393,6 +2609,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 35
@@ -2475,6 +2695,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -2580,6 +2804,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -2662,6 +2890,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -2744,6 +2976,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -2826,6 +3062,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+--- !u!1 &1566622000 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5246706983480671108, guid: e10b6a0f347ab6548bb3d1cddea29182, type: 3}
+  m_PrefabInstance: {fileID: 1630125090}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &1566622004
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566622000}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!255 &1566622005
+FixedJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566622000}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 1963310413}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 1
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: -0.000000019775271}
+  m_DampingRatio: 0
+  m_Frequency: 0
 --- !u!1001 &1630125090
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3213,6 +3493,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -3295,6 +3579,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -3506,6 +3794,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -3611,6 +3903,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -3716,6 +4012,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 24
@@ -3798,6 +4098,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -3992,6 +4296,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 31
@@ -4114,6 +4422,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66b1a4a18ec9ef84393910c498c7e772, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!50 &1963310413
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963310408}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &1984622199
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4137,6 +4466,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -4242,6 +4575,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -4347,6 +4684,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -4406,6 +4747,50 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 39719301256064833, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+--- !u!1 &2026768880 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5246706985310529407, guid: e10b6a0f347ab6548bb3d1cddea29182, type: 3}
+  m_PrefabInstance: {fileID: 1630125090}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &2026768884
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026768880}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!255 &2026768885
+FixedJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026768880}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 1963310413}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 1
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0.39, y: 0.91}
+  m_DampingRatio: 0
+  m_Frequency: 0
 --- !u!1001 &2038485665
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4429,6 +4814,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 28
@@ -4534,6 +4923,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -4639,6 +5032,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586718, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7cf360c8235ba9f49b6ff9dfaca028e2, type: 2}
     - target: {fileID: 3495675956162586719, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_RootOrder
       value: 7
