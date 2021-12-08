@@ -8,7 +8,7 @@ public class OverlapCheck : MonoBehaviour
     Collider2D col2D;
     Collider2D[] result;
     public bool FluidCollision = false;
-    public Rigidbody2D rb;
+    Rigidbody2D rb;
     public float thrust = 1.0f;
     void Awake()
     {
@@ -24,7 +24,11 @@ public class OverlapCheck : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rb = gameObject.GetComponent<Rigidbody2D>();
+        if (FluidCollision == true)
+        {
+            
+        }
     }
 
     void OverlapCount()
@@ -38,14 +42,15 @@ public class OverlapCheck : MonoBehaviour
             {
                 Debug.Log("ok");
                 FluidCollision = true;
-                rb.AddForce(transform.up * thrust, ForceMode2D.Impulse);
+                InvokeRepeating("FloatForce", 1, 1);
+               
             }
-            if (r.name != "LiquidParticle(Clone)" && FluidCollision==true) 
-            {
 
-                Debug.Log("non");
-            } 
+
         }
     }
-
+    void FloatForce()
+    {
+        rb.AddForce(transform.up * thrust, ForceMode2D.Impulse);
+    }
 }
