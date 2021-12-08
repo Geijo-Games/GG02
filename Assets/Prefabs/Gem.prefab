@@ -12,8 +12,7 @@ GameObject:
   - component: {fileID: 3495675956162586704}
   - component: {fileID: 3495675956162586718}
   - component: {fileID: 3495675956162586705}
-  - component: {fileID: 39719301256064833}
-  - component: {fileID: 3576807537078201351}
+  - component: {fileID: -7016206737040933020}
   m_Layer: 7
   m_Name: Gem
   m_TagString: gem
@@ -111,15 +110,16 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.32, y: 0.39499998}
-      - {x: -0.37, y: 0.385}
-      - {x: -0.55, y: 0.145}
-      - {x: -0.55, y: 0.015}
-      - {x: -0.07, y: -0.415}
-      - {x: 0.099999994, y: -0.415}
-      - {x: 0.52, y: 0.055}
-      - {x: 0.52, y: 0.145}
-      - {x: 0.34, y: 0.39499998}
+    - - {x: -0.28478974, y: 0.38619757}
+      - {x: -0.29077703, y: 0.38793433}
+      - {x: -0.5347771, y: 0.12064345}
+      - {x: -0.53477705, y: 0.11242647}
+      - {x: -0.015197571, y: -0.39368805}
+      - {x: -0.018738575, y: -0.39368805}
+      - {x: 0.5108661, y: 0.1311144}
+      - {x: 0.51086617, y: 0.13111453}
+      - {x: 0.49564338, y: 0.12673236}
+      - {x: 0.26957962, y: 0.38619727}
 --- !u!50 &3495675956162586705
 Rigidbody2D:
   serializedVersion: 4
@@ -141,21 +141,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &39719301256064833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3495675956162586706}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a1d701c00273364b9af3112fa61ba83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GemPosition: {x: 0, y: 0, z: 0}
-  gemOperator: {fileID: 0}
---- !u!114 &3576807537078201351
+--- !u!114 &-7016206737040933020
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -168,3 +154,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  rb: {fileID: 0}
+  thrust: 3
