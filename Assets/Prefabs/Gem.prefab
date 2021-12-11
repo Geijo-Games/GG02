@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3495675956162586704}
   - component: {fileID: 3495675956162586718}
   - component: {fileID: 3495675956162586705}
-  - component: {fileID: -7016206737040933020}
+  - component: {fileID: 3866768071067324679}
   m_Layer: 7
   m_Name: Gem
   m_TagString: gem
@@ -141,7 +141,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-7016206737040933020
+--- !u!114 &3866768071067324679
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -150,8 +150,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3495675956162586706}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc93a2e2b459a6045bf2deb370c6ff0f, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a1d701c00273364b9af3112fa61ba83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FluidCollision: 0
-  thrust: 3
+  thrust: 5

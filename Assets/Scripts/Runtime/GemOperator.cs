@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GemOperator : MonoBehaviour
 {
-    public GemCollider gemCollider;
+    //public GemCollider gemCollider;
     public int GemCounter;
     public bool GemDestroyFlag;
     public GameObject obj;
@@ -23,7 +23,7 @@ public class GemOperator : MonoBehaviour
     {
         if (GemCounter == 2)
         {
-            Instantiate(obj, gemCollider.GemPosition, Quaternion.identity);
+            //Instantiate(obj, gemCollider.GemPosition, Quaternion.identity);
             GemDestroyFlag = true;
         }
     }
