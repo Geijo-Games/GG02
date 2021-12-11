@@ -416,12 +416,13 @@ MonoBehaviour:
     animator: {fileID: 5246706983926143419}
   - State: 3
     CallName: RightLidClosing
-    CallTime: 8
+    CallTime: 10
     animator: {fileID: 5246706983926143419}
   - State: 4
     CallName: 
-    CallTime: 10
+    CallTime: 12
     animator: {fileID: 5246706983926143419}
+  IsFinish: 0
 --- !u!1 &5246706984049767355
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,12 +606,13 @@ MonoBehaviour:
     animator: {fileID: 5246706984049767334}
   - State: 3
     CallName: TopLidClosing
-    CallTime: 8
+    CallTime: 10
     animator: {fileID: 5246706984053592789}
   - State: 4
     CallName: 
-    CallTime: 10
+    CallTime: 12
     animator: {fileID: 5246706984053592789}
+  IsFinish: 0
 --- !u!1 &5246706984073505066
 GameObject:
   m_ObjectHideFlags: 0
@@ -1160,12 +1162,13 @@ MonoBehaviour:
     animator: {fileID: 5246706985410671111}
   - State: 3
     CallName: BottomLidClosing
-    CallTime: 8
+    CallTime: 10
     animator: {fileID: 5246706984584380251}
   - State: 4
     CallName: 
-    CallTime: 10
+    CallTime: 12
     animator: {fileID: 5246706984584380251}
+  IsFinish: 0
 --- !u!1 &5246706985219869560
 GameObject:
   m_ObjectHideFlags: 0
@@ -1299,12 +1302,13 @@ MonoBehaviour:
     animator: {fileID: 5246706985219869542}
   - State: 3
     CallName: LeftLidClosing
-    CallTime: 8
+    CallTime: 10
     animator: {fileID: 5246706985219869542}
   - State: 4
     CallName: 
-    CallTime: 10
+    CallTime: 12
     animator: {fileID: 5246706985219869542}
+  IsFinish: 0
 --- !u!1 &5246706985310529407
 GameObject:
   m_ObjectHideFlags: 0
@@ -1497,6 +1501,8 @@ MonoBehaviour:
   - {fileID: 1574926320}
   - {fileID: 873697552}
   LidSize: 0
+  LidSwitchInterval: 8
+  IsLidSwitched: 0
 --- !u!1 &5246706985410671128
 GameObject:
   m_ObjectHideFlags: 0
