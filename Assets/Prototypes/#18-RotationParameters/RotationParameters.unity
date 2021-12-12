@@ -237,6 +237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1001 &86162956
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -255,6 +256,10 @@ PrefabInstance:
     - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
@@ -346,6 +351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1 &248466449 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
@@ -369,6 +375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1001 &251389947
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -387,6 +394,10 @@ PrefabInstance:
     - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
@@ -478,6 +489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1 &303360875 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
@@ -501,6 +513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1001 &306753396
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -519,6 +532,10 @@ PrefabInstance:
     - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
@@ -610,6 +627,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1001 &357200603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -628,6 +646,10 @@ PrefabInstance:
     - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
@@ -719,6 +741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1001 &371386531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -737,6 +760,10 @@ PrefabInstance:
     - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
@@ -946,6 +973,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1001 &481788998
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -964,6 +992,10 @@ PrefabInstance:
     - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
@@ -1055,6 +1087,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1 &522587099
 GameObject:
   m_ObjectHideFlags: 0
@@ -1174,6 +1207,10 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
       value: Gem (19)
@@ -1264,6 +1301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1 &534074672 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
@@ -1287,6 +1325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1001 &572333484
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1305,6 +1344,10 @@ PrefabInstance:
     - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
@@ -1396,6 +1439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1001 &645233243
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1414,6 +1458,10 @@ PrefabInstance:
     - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
@@ -1505,6 +1553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1 &651096419 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
@@ -1528,6 +1577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1 &723010139 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5246706983794895725, guid: e10b6a0f347ab6548bb3d1cddea29182, type: 3}
@@ -1590,6 +1640,10 @@ PrefabInstance:
     - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
@@ -1681,6 +1735,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1001 &845425371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1699,6 +1754,10 @@ PrefabInstance:
     - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
@@ -1790,6 +1849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1 &854369056 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5246706984073505066, guid: e10b6a0f347ab6548bb3d1cddea29182, type: 3}
@@ -1864,6 +1924,10 @@ PrefabInstance:
     - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
@@ -1955,6 +2019,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1001 &986143163
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1973,6 +2038,10 @@ PrefabInstance:
     - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
@@ -2059,6 +2128,10 @@ PrefabInstance:
     - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
@@ -2150,6 +2223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1001 &1079548598
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2168,6 +2242,10 @@ PrefabInstance:
     - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
@@ -2259,6 +2337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1 &1124949509 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
@@ -2282,6 +2361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1001 &1142678406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2300,6 +2380,10 @@ PrefabInstance:
     - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
@@ -2387,6 +2471,10 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
       value: Gem (26)
@@ -2472,6 +2560,10 @@ PrefabInstance:
     - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
@@ -2563,6 +2655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1 &1453729906 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
@@ -2586,6 +2679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1001 &1497129095
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2604,6 +2698,10 @@ PrefabInstance:
     - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
@@ -2690,6 +2788,10 @@ PrefabInstance:
     - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
@@ -2781,6 +2883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1001 &1526768525
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2799,6 +2902,10 @@ PrefabInstance:
     - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
@@ -2886,6 +2993,10 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
       value: Gem (22)
@@ -2971,6 +3082,10 @@ PrefabInstance:
     - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
@@ -3062,6 +3177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1 &1566622000 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5246706983480671108, guid: e10b6a0f347ab6548bb3d1cddea29182, type: 3}
@@ -3470,6 +3586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1001 &1693204071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3488,6 +3605,10 @@ PrefabInstance:
     - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
@@ -3574,6 +3695,10 @@ PrefabInstance:
     - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
@@ -3665,6 +3790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1 &1781909880 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
@@ -3688,6 +3814,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1 &1786684506
 GameObject:
   m_ObjectHideFlags: 0
@@ -3790,6 +3917,10 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
       value: Gem (17)
@@ -3880,6 +4011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1001 &1813420544
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3898,6 +4030,10 @@ PrefabInstance:
     - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
@@ -3989,6 +4125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1001 &1829885269
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4007,6 +4144,10 @@ PrefabInstance:
     - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
@@ -4093,6 +4234,10 @@ PrefabInstance:
     - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
@@ -4184,6 +4329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1 &1849690193 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
@@ -4207,6 +4353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1 &1887564602
 GameObject:
   m_ObjectHideFlags: 0
@@ -4291,6 +4438,10 @@ PrefabInstance:
     - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
@@ -4462,6 +4613,10 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
       value: Gem (6)
@@ -4552,6 +4707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1001 &1988371668
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4570,6 +4726,10 @@ PrefabInstance:
     - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
@@ -4661,6 +4821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1001 &2019670386
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4679,6 +4840,10 @@ PrefabInstance:
     - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
@@ -4810,6 +4975,10 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
       value: Gem (28)
@@ -4900,6 +5069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1001 &2102426986
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4918,6 +5088,10 @@ PrefabInstance:
     - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
@@ -5009,6 +5183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
 --- !u!1001 &2144141842
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5027,6 +5202,10 @@ PrefabInstance:
     - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3495675956162586705, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3495675956162586706, guid: 982b74c2e41b3654099941622e55ee0e, type: 3}
       propertyPath: m_Name
@@ -5118,3 +5297,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FluidCollision: 0
+  thrust: 1
