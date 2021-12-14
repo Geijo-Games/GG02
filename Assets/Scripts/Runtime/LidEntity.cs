@@ -17,18 +17,22 @@ public class LidEntity : MonoBehaviour
     [Header("General Settings")]
     public bool IsEnabled = true;
     public int lidId;
+    public float LidStartOpenTime = 2;
+    public float LidEndCloseTime = 12;
 
     [SerializeField]
     private LidAnimData[] AnimList = new LidAnimData[5];
 
     private int CurState = 0;
     private float TotalTime;
+    private Rigidbody2D rigidbody;
 
     public bool IsFinish;
 
     void Start()
     {
         TotalTime = AnimList[AnimList.Length - 1].CallTime;
+        rigidbody = GetComponentInChildren<Rigidbody2D>();
     }
 
     public bool ShouldChangeState(float curTime)
@@ -94,10 +98,20 @@ public class LidEntity : MonoBehaviour
 
     IEnumerator LidAnimControl()
     {
-        Debug.Log("start couroutine");
         float timer = 0;
         while(timer < TotalTime + 1)
         {
+            if (rigidbody)
+            {
+                if(timer < LidStartOpenTime && (timer + Time.deltaTime) > LidStartOpenTime)
+                {
+                    rigidbody.isKinematic = true;
+                }
+                if (timer < LidEndCloseTime && (timer + Time.deltaTime) > LidEndCloseTime)
+                {
+                    rigidbody.isKinematic = false;
+                }
+            }
             if (ShouldChangeState(timer))
             {
                 ChangeState();
