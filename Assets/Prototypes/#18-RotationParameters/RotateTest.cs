@@ -1,9 +1,13 @@
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 
 public class RotateTest : MonoBehaviour
 {
+#if UNITY_EDITOR
     [MenuItem("GG02/Test Rotate")]
+#endif
     static void TestRotate()
     {
         float torque = 10000000 * Random.value;
