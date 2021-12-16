@@ -3231,7 +3231,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 98201891, guid: e10b6a0f347ab6548bb3d1cddea29182, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 305308979, guid: e10b6a0f347ab6548bb3d1cddea29182, type: 3}
       propertyPath: LidOpenTime
