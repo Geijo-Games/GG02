@@ -99,7 +99,7 @@ public class LidEntity : MonoBehaviour
     IEnumerator LidAnimControl()
     {
         float timer = 0;
-        while(timer < TotalTime + 1)
+        while(timer < LidEndCloseTime)
         {
             if (rigidbody)
             {
@@ -119,6 +119,7 @@ public class LidEntity : MonoBehaviour
             timer += Time.deltaTime;
             yield return null; 
         }
+        rigidbody.isKinematic = false;
         yield return null;
     }
 

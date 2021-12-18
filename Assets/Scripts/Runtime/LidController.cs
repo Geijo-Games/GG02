@@ -49,7 +49,6 @@ public class LidController : MonoBehaviour
     {
         LidEntity CurLid = GetSwitchedLid();
         CurLid.LidControl();
-        Debug.Log("start lid: " + CurLid.lidId);
     }
 
     LidEntity GetSwitchedLid()

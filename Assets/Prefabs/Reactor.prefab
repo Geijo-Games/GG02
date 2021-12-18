@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5246706983480671109}
   - component: {fileID: 5246706983480671107}
   - component: {fileID: 5246706983480671106}
+  - component: {fileID: 1566622004}
+  - component: {fileID: 1566622005}
   m_Layer: 0
   m_Name: reactor_left_lid_red
   m_TagString: Untagged
@@ -133,6 +135,45 @@ PolygonCollider2D:
       - {x: -2.04, y: -0.61}
       - {x: -2.04, y: -0.56}
       - {x: -2.1299999, y: -0.11}
+--- !u!50 &1566622004
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5246706983480671108}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!255 &1566622005
+FixedJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5246706983480671108}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 1963310413}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 1
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: -0.000000019775271}
+  m_DampingRatio: 0
+  m_Frequency: 0
 --- !u!1 &5246706983794895725
 GameObject:
   m_ObjectHideFlags: 0
@@ -144,6 +185,8 @@ GameObject:
   - component: {fileID: 5246706983794895722}
   - component: {fileID: 5246706983794895720}
   - component: {fileID: 5246706983794895723}
+  - component: {fileID: 723010143}
+  - component: {fileID: 723010144}
   m_Layer: 0
   m_Name: reactor_right_lid_red
   m_TagString: Untagged
@@ -266,6 +309,45 @@ PolygonCollider2D:
       - {x: 2.32, y: -0.5}
       - {x: 2.35, y: -0.31}
       - {x: 2.48, y: -0.32999998}
+--- !u!50 &723010143
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5246706983794895725}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!255 &723010144
+FixedJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5246706983794895725}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 1963310413}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 1
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_DampingRatio: 0
+  m_Frequency: 0
 --- !u!1 &5246706983926143421
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,6 +483,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsEnabled: 1
   lidId: 0
+  LidStartOpenTime: 2
+  LidEndCloseTime: 12
   AnimList:
   - State: 0
     CallName: RightLidOpenWarning
@@ -416,11 +500,11 @@ MonoBehaviour:
     animator: {fileID: 5246706983926143419}
   - State: 3
     CallName: RightLidClosing
-    CallTime: 10
+    CallTime: 8
     animator: {fileID: 5246706983926143419}
   - State: 4
     CallName: 
-    CallTime: 12
+    CallTime: 10
     animator: {fileID: 5246706983926143419}
   IsFinish: 0
 --- !u!1 &5246706984049767355
@@ -550,7 +634,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5246706984053592791}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.26, y: 0.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -591,6 +675,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsEnabled: 1
   lidId: 0
+  LidStartOpenTime: 2
+  LidEndCloseTime: 12
   AnimList:
   - State: 0
     CallName: TopLidOpenWarning
@@ -606,11 +692,11 @@ MonoBehaviour:
     animator: {fileID: 5246706984049767334}
   - State: 3
     CallName: TopLidClosing
-    CallTime: 10
+    CallTime: 8
     animator: {fileID: 5246706984053592789}
   - State: 4
     CallName: 
-    CallTime: 12
+    CallTime: 10
     animator: {fileID: 5246706984053592789}
   IsFinish: 0
 --- !u!1 &5246706984073505066
@@ -624,6 +710,9 @@ GameObject:
   - component: {fileID: 5246706984073505067}
   - component: {fileID: 5246706984073505065}
   - component: {fileID: 5246706984073505064}
+  - component: {fileID: 854369060}
+  - component: {fileID: 854369057}
+  - component: {fileID: 854369061}
   m_Layer: 0
   m_Name: reactor_frame
   m_TagString: Untagged
@@ -813,6 +902,57 @@ PolygonCollider2D:
       - {x: 2.29, y: 0.71999997}
       - {x: 2.29, y: 0.79999995}
       - {x: 2.2, y: 1.02}
+--- !u!50 &854369060
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5246706984073505066}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!255 &854369057
+FixedJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5246706984073505066}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 1963310413}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 1
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_DampingRatio: 0
+  m_Frequency: 0
+--- !u!114 &854369061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5246706984073505066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05600fc2455bebc489a3132274720bc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5246706984488811314
 GameObject:
   m_ObjectHideFlags: 0
@@ -906,6 +1046,8 @@ GameObject:
   - component: {fileID: 5246706984548227977}
   - component: {fileID: 5246706984548228023}
   - component: {fileID: 5246706984548228022}
+  - component: {fileID: 410357739}
+  - component: {fileID: 410357740}
   m_Layer: 0
   m_Name: reactor_bottom_lid
   m_TagString: Untagged
@@ -1029,6 +1171,45 @@ PolygonCollider2D:
       - {x: 0.34, y: -2.3799999}
       - {x: 0.45999998, y: -2.34}
       - {x: 0.48, y: -2.32}
+--- !u!50 &410357739
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5246706984548227976}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!255 &410357740
+FixedJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5246706984548227976}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 1963310413}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 1
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0.000000014901161, y: 0}
+  m_DampingRatio: 0
+  m_Frequency: 0
 --- !u!1 &5246706984584380253
 GameObject:
   m_ObjectHideFlags: 0
@@ -1147,6 +1328,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsEnabled: 1
   lidId: 0
+  LidStartOpenTime: 2
+  LidEndCloseTime: 12
   AnimList:
   - State: 0
     CallName: BottomLidOpenWarning
@@ -1162,11 +1345,11 @@ MonoBehaviour:
     animator: {fileID: 5246706985410671111}
   - State: 3
     CallName: BottomLidClosing
-    CallTime: 10
+    CallTime: 8
     animator: {fileID: 5246706984584380251}
   - State: 4
     CallName: 
-    CallTime: 12
+    CallTime: 10
     animator: {fileID: 5246706984584380251}
   IsFinish: 0
 --- !u!1 &5246706985219869560
@@ -1287,6 +1470,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsEnabled: 1
   lidId: 0
+  LidStartOpenTime: 2
+  LidEndCloseTime: 12
   AnimList:
   - State: 0
     CallName: LeftLidOpenWarning
@@ -1302,11 +1487,11 @@ MonoBehaviour:
     animator: {fileID: 5246706985219869542}
   - State: 3
     CallName: LeftLidClosing
-    CallTime: 10
+    CallTime: 8
     animator: {fileID: 5246706985219869542}
   - State: 4
     CallName: 
-    CallTime: 12
+    CallTime: 10
     animator: {fileID: 5246706985219869542}
   IsFinish: 0
 --- !u!1 &5246706985310529407
@@ -1320,6 +1505,8 @@ GameObject:
   - component: {fileID: 5246706985310529404}
   - component: {fileID: 5246706985310529402}
   - component: {fileID: 5246706985310529405}
+  - component: {fileID: 2026768884}
+  - component: {fileID: 2026768885}
   m_Layer: 0
   m_Name: reactor_top_lid
   m_TagString: Untagged
@@ -1443,6 +1630,45 @@ PolygonCollider2D:
       - {x: -0.38, y: 2.2}
       - {x: -0.11, y: 2.23}
       - {x: 0.14, y: 2.24}
+--- !u!50 &2026768884
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5246706985310529407}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!255 &2026768885
+FixedJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5246706985310529407}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 1963310413}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 1
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_DampingRatio: 0
+  m_Frequency: 0
 --- !u!1 &5246706985402867575
 GameObject:
   m_ObjectHideFlags: 0
@@ -1453,6 +1679,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5246706985402867572}
   - component: {fileID: 98201891}
+  - component: {fileID: 1963310413}
+  - component: {fileID: 1963310411}
+  - component: {fileID: 1963310412}
   m_Layer: 0
   m_Name: Reactor
   m_TagString: Untagged
@@ -1469,7 +1698,7 @@ Transform:
   m_GameObject: {fileID: 5246706985402867575}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3.0141, y: 3.0141, z: 3.0141}
   m_Children:
   - {fileID: 5246706984488811315}
   - {fileID: 5246706984073505067}
@@ -1503,6 +1732,85 @@ MonoBehaviour:
   LidSize: 0
   LidSwitchInterval: 8
   IsLidSwitched: 0
+--- !u!50 &1963310413
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5246706985402867575}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &1963310411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5246706985402867575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: cb79bc246c76fad4589921317cfb3d4f, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1963310412}
+        m_TargetAssemblyTypeName: ReactorRotator, Assembly-CSharp
+        m_MethodName: Rotate
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 128213c9-2096-4cdf-8dca-b239d2d35f6d
+    m_ActionName: Playing/Rotate
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Playing
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &1963310412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5246706985402867575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66b1a4a18ec9ef84393910c498c7e772, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5246706985410671128
 GameObject:
   m_ObjectHideFlags: 0
