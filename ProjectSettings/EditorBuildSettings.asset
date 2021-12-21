@@ -4,16 +4,5 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 0
-    path: Assets/_Scenes/MainGame.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-<<<<<<< HEAD
-    path: Assets/Prototypes/#20-RotationTest/MobileRotationTest.unity
-    guid: e2007a0f6a9857544ac543c303bbe2e8
-=======
-    path: Assets/Prototypes/#18-RotationParameters/RotationParametersTemp.unity
-    guid: 430eb7818e2ff37498c7c58bce1312d4
->>>>>>> 090b23260e84faca0085861928d56e1f0e34a3db
+  m_Scenes: []
   m_configObjects: {}
