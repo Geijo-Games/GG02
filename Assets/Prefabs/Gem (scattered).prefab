@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3495675956162586705}
   - component: {fileID: 3866768071067324679}
   - component: {fileID: -582913248840606056}
+  - component: {fileID: 1467129026436093719}
   m_Layer: 7
   m_Name: Gem (scattered)
   m_TagString: gem
@@ -29,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3495675956162586706}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0554, y: 0.6555, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -133,10 +134,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 2
+  m_Mass: 0.5
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0.5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -165,5 +166,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1de1691c1394a724ba2ca27f5b497e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1467129026436093719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3495675956162586706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a593000f0d7c754fa89fbe581b67198, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

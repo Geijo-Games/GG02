@@ -5,12 +5,12 @@ using UnityEngine;
 public class GemScatter : MonoBehaviour
 {
     public GameObject prefabObj;
-    Vector2 pos;
+    Vector3 pos;
     // Start is called before the first frame update
     void Start()
     {
-        GemSpown();
         pos = this.gameObject.transform.position;
+        GemSpown();
     }
 
     // Update is called once per frame
@@ -21,7 +21,7 @@ public class GemScatter : MonoBehaviour
 
     void GemSpown()
     {
-        GameObject obj = Instantiate(prefabObj, pos, Quaternion.identity);
+        Instantiate(prefabObj, pos, Quaternion.identity);
         // ゲームオブジェクトの位置を設定します。
        // prefabObj.transform.localPosition = pos;
 
