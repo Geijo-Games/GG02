@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class GemAddForce : MonoBehaviour
 {
-    float thrust = 20.0f;
+    float thrust = 2.5f;
     Rigidbody2D rb2D;
     Vector2 GemShootDirection;
+     
     // Start is called before the first frame update
     void Start()
     {
-        GemShootDirection = new Vector2(-1, -1);
+        GemShootDirection = new Vector2(-1.0f, 2.5f);
         rb2D = this.gameObject.GetComponent<Rigidbody2D>();
-        rb2D.AddForce(transform.up, ForceMode2D.Impulse);
+        rb2D.AddForce(GemShootDirection, ForceMode2D.Impulse);
+       
     }
 
     // Update is called once per frame
