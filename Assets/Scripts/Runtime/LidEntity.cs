@@ -27,6 +27,8 @@ public class LidEntity : MonoBehaviour
     private float TotalTime;
     private Rigidbody2D rigidbody;
 
+    public bool IsOpening;
+
     public bool IsFinish;
 
     void Start()
@@ -105,10 +107,12 @@ public class LidEntity : MonoBehaviour
             {
                 if(timer < LidStartOpenTime && (timer + Time.deltaTime) > LidStartOpenTime)
                 {
+                    IsOpening = true;
                     rigidbody.isKinematic = true;
                 }
                 if (timer < LidEndCloseTime && (timer + Time.deltaTime) > LidEndCloseTime)
                 {
+                    IsOpening = false;
                     rigidbody.isKinematic = false;
                 }
             }

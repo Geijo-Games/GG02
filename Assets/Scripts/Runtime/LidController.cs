@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class LidController : MonoBehaviour
 {
+    public static LidController Instance;
+
     [Header("General Settings")]
     public bool IsEnabled = true;
     public LidEntity[] LidList = new LidEntity[4];
@@ -15,8 +17,18 @@ public class LidController : MonoBehaviour
     private int CurrentLidSize;
     private float Timer;
 
+    public bool IsLidOpening()
+    {
+        if(CurrentActiveLid && CurrentActiveLid.IsOpening)
+        {
+            return true;
+        }
+        return false;
+    }
+
     void Start()
     {
+        Instance = this;
         LidSize = LidList.Length;
         CurrentLidSize = LidSize;
         Timer = 0;
