@@ -10,10 +10,10 @@ public class GemRandamScatter : MonoBehaviour
 
     private const float _MIN_INTERVAL_VALUE = 0.5f;
     private const float _MAX_INTERVAL_VALUE = 1.0f;
-    private const float _MIN_X_VALUE = -1.0f;
-    private const float _MAX_X_VALUE = 1.0f;
-    private const float _MIN_Y_VALUE = 0.5f;
-    private const float _MAX_Y_VALUE = 2.0f;
+    private const float _MIN_X_VALUE = -0.5f;
+    private const float _MAX_X_VALUE = 0.5f;
+    private const float _MIN_Y_VALUE = -0.5f;
+    private const float _MAX_Y_VALUE = 0.5f;
 
 
     private bool _isGameStart = true;
@@ -28,25 +28,30 @@ public class GemRandamScatter : MonoBehaviour
     public GameObject prefabObj;
     Vector3 pos = Vector3.zero;
     float GemCount;
-
+    Vector3 ScatterPos;
+    GameObject GemPrehub;
     private readonly List<Vector3> _usePositionList = new List<Vector3>();
 
     // Start is called before the first frame update
     void Start()
     {
-        //空同然だけどリスト作っとく
-        foreach (Vector3 child in _blockParent.transform)
-        {
-            _usePositionList.Add(child);
-        }
+        ScatterPos = this.gameObject.transform.position;
+        InvokeRepeating("PosPrimal",0,2);
+        PosPrimal();
 
-        RandomPos();
-        foreach (Vector3 child in _usePositionList)
-        {
-            Vector3 pos = Vector3.zero;
-            pos += child;
-            Instantiate(prefabObj,pos , Quaternion.identity);
-        }
+        ////空同然だけどリスト作っとく
+        //foreach (Vector3 child in _blockParent.transform)
+        //{
+        //    _usePositionList.Add(child);
+        //}
+
+        //RandomPos();
+        //foreach (Vector3 child in _usePositionList)
+        //{
+        //    Vector3 pos = Vector3.zero;
+        //    pos += child;
+        //    Instantiate(prefabObj,pos , Quaternion.identity);
+        //}
 
     }
 
@@ -55,6 +60,21 @@ public class GemRandamScatter : MonoBehaviour
     {
         
     }
+
+    void PosPrimal()
+    {
+        for (GemCount = 0; GemCount < 11; GemCount++)
+        {
+            Vector3 pos = Vector3.zero;
+            _randomValueX = Random.Range(_MIN_X_VALUE, _MAX_X_VALUE);
+            _randomValueY = Random.Range(_MIN_Y_VALUE, _MAX_Y_VALUE);
+            pos.x  = _randomValueX + ScatterPos.x;
+            pos.y  = _randomValueY + ScatterPos.y;
+            GemPrehub = (GameObject)Instantiate(prefabObj, pos, Quaternion.identity);
+        }
+    }
+
+
     void RandomPos()
     {
         for(GemCount=0; GemCount < 11; GemCount++)
@@ -76,9 +96,6 @@ public class GemRandamScatter : MonoBehaviour
             if (_isSetablePositionX || _isSetablePositionY)
             {
                 Vector3 randomPosition = new Vector3(_randomValueX, _randomValueY);
-
-
-
                 //新しい使用中のポジションをリストに追加
                 _usePositionList.Add(randomPosition);
             }
