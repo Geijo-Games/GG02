@@ -4,19 +4,32 @@ using UnityEngine;
 
 public class GemSpawner : MonoBehaviour
 {
-    public Vector3 SpawnStartPosition;
+    public bool isEnabled;
+    public Vector3 SpawnPosOffset;
+    public float SpawnSpeed;
+    public float SpawnInterval;
 
-    void Start()
+    private float m_SpawnTimer;
+
+    void FixedUpdate()
     {
-        if(SpawnStartPosition == Vector3.zero)
+        if (isEnabled)
         {
-            SpawnStartPosition = transform.position;
+            Spawn();
         }
     }
 
-
-    void Update()
+    void Spawn()
     {
-        
+        m_SpawnTimer += Time.deltaTime;
+        if(m_SpawnTimer > SpawnInterval)
+        {
+            GameObject obj = GemPool.Instance.Spawn("Gem", transform.position + SpawnPosOffset, transform.rotation);
+            if (obj && obj.TryGetComponent(out Rigidbody2D rigidbody))
+            {
+                rigidbody.AddForce(new Vector2(transform.up.x, transform.up.z) * SpawnSpeed);
+            }
+            m_SpawnTimer = 0;
+        }
     }
 }

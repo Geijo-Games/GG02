@@ -45,7 +45,7 @@ public class GemPool : MonoBehaviour
     }
 
     // Poolから宝石を取り出します。
-    public static GameObject Spawn(string prefabName, Vector3 position, Quaternion rotation)
+    public GameObject Spawn(string prefabName, Vector3 position, Quaternion rotation)
     {
         string key = prefabName + "(Clone)";
         GameObject gObj;
@@ -68,7 +68,7 @@ public class GemPool : MonoBehaviour
     }
 
     // 宝石をPoolに戻ります。
-    public static GameObject Collect(GameObject gObj)
+    public GameObject Collect(GameObject gObj)
     {
         string key = gObj.name;
         if (pool.ContainsKey(key))

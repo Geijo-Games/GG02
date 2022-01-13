@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3495675956162586718}
   - component: {fileID: 3495675956162586705}
   - component: {fileID: 3866768071067324679}
+  - component: {fileID: 1172244745476720234}
   m_Layer: 7
   m_Name: Gem
   m_TagString: gem
@@ -154,3 +155,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thrust: 1
+--- !u!114 &1172244745476720234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3495675956162586706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21ca26f91a1889d4d9be29abae3d65bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  Type: 
+  Rarity: 0
+  Size: {x: 0, y: 0, z: 0}
+  GemImage: {fileID: 0}
+  CriticalHeatPoint: 0
+  ExplodeHeatPoint: 0
+  Score: 0

@@ -43,11 +43,11 @@ public class GemManager : MonoBehaviour
             string prefabName = newGem.Name;
 
             // 新しい宝石を宝石を生成します。
-            GemPool.Spawn(prefabName, midPos, midRot);
+            GemPool.Instance.Spawn(prefabName, midPos, midRot);
 
             // 元の宝石を消滅します。
-            GemPool.Collect(Gem1.gameObject);
-            GemPool.Collect(Gem2.gameObject);
+            GemPool.Instance.Collect(Gem1.gameObject);
+            GemPool.Instance.Collect(Gem2.gameObject);
         }
     }
 }

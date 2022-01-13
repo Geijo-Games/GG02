@@ -65,4 +65,18 @@ public class GemEntity : MonoBehaviour
         m_curHeat += heatAmount;
     }
 
+    void FixedUpdate()
+    {
+        if(transform.position.y < -100)
+        {
+            Collect();
+        }
+    }
+
+    // 画面から離れて遠すぎた時に回収します
+    void Collect()
+    {
+        GemPool.Instance.Collect(this.gameObject);
+    }
+
 }
