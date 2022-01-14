@@ -5,11 +5,11 @@ using UnityEngine;
 public class GemSpawner : MonoBehaviour
 {
     public bool isEnabled;
-    public Vector3 SpawnPosOffset;
     public float SpawnSpeed;
     public float SpawnInterval;
     public int SpawnNum;
-    public float SpawnEachGemOffset;
+    public float SpawnEachGemOffset = 0.5f;
+    public float SpawnForceOffset = 0.1f;
 
     private float m_SpawnTimer;
 
@@ -29,14 +29,14 @@ public class GemSpawner : MonoBehaviour
             for(int i = 0; i < SpawnNum; i++)
             {
                 Vector3 pos = Vector3.zero;
-                float _randomValueX = Random.Range(-0.5f, 0.5f);
-                float _randomValueY = Random.Range(-0.5f, 0.5f);
+                float _randomValueX = Random.Range(-SpawnEachGemOffset, SpawnEachGemOffset);
+                float _randomValueY = Random.Range(-SpawnEachGemOffset, SpawnEachGemOffset);
                 pos.x = _randomValueX + transform.position.x;
                 pos.y = _randomValueY + transform.position.y;
                 GameObject obj = GemPool.Instance.Spawn("Gem", pos, transform.rotation);
                 if (obj && obj.TryGetComponent(out Rigidbody2D rigidbody))
                 {
-                    float _SpawnSpeed = SpawnSpeed * Random.Range(0.9f, 1.1f);
+                    float _SpawnSpeed = SpawnSpeed * Random.Range(1- SpawnForceOffset, 1+ SpawnForceOffset);
                     rigidbody.AddForce(new Vector2(transform.up.x, transform.up.z) * SpawnSpeed);
                 }
             }
